@@ -1,4 +1,4 @@
-package com.example.wavesanimation.component
+package com.codercamp.wavesanimationlibrary
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutLinearInEasing
@@ -39,7 +39,7 @@ fun PreviewWaveAnimation() {
 }
 
 @Composable
-fun WavesAnimation(drawableId: Int = com.example.wavesanimation.R.drawable.baseline_add_24) {
+fun WavesAnimation(drawableId: Int = R.drawable.baseline_add_24) {
 
     val waves = listOf(
         remember { Animatable(0f) },

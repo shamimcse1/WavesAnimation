@@ -3,6 +3,7 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+
     }
 }
 dependencyResolutionManagement {
@@ -15,4 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "WavesAnimation"
 include(":app")
- 
+include(":WavesAnimationLibrary")

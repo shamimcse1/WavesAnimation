@@ -1,5 +1,6 @@
 package com.example.wavesanimation
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -10,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.codercamp.wavesanimationlibrary.WavesAnimation
 import com.example.wavesanimation.ui.theme.WavesAnimationTheme
 
 class MainActivity : ComponentActivity() {
@@ -41,6 +43,11 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     WavesAnimationTheme {
-        Greeting("Android")
+        Surface(
+            color = MaterialTheme.colorScheme.tertiary
+        ) {
+            WavesAnimation()
+        }
+
     }
 }
