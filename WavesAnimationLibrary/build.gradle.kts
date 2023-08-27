@@ -47,14 +47,28 @@ android {
     }
 
 }
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("maven") {
-                groupId = "com.github.shamimcse1"
-                artifactId = "waves_animation_library"
-                version = "1.0.0"
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            create<MavenPublication>("maven") {
+//                groupId = "com.github.shamimcse1"
+//                artifactId = "waves_animation_library"
+//                version = "1.0.0"
+//
+//                from(components["release"])
+//            }
+//        }
+//    }
+//}
 
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.shamimcse1"
+            artifactId = "waves_animation_library"
+            version = "1.0.0"
+
+            afterEvaluate {
                 from(components["release"])
             }
         }
