@@ -67,6 +67,6 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-   // implementation("com.github.shamimcse1:WavesAnimation:1.0.0")
+//    implementation("com.github.shamimcse1:wavesAnimation:1.0.0")
     implementation(project(mapOf("path" to ":WavesAnimationLibrary")))
 }
